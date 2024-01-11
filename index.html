@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div id="weather-form" class="weather-container1">
+        <label for="state">Selecione um Estado:</label>
+        <select id="state" onchange="getCities()">
+            <!-- As opções de estado serão geradas automaticamente -->
+        </select>
+
+        <label for="city">Selecione uma Cidade:</label>
+        <select id="city" onchange="getWeather()">
+            <!-- As opções de cidade serão geradas automaticamente -->
+        </select>
+
+        <div id="result" class="weather-container2"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
